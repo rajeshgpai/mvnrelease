@@ -19,6 +19,19 @@
 		<kotlin.version>1.2.71</kotlin.version>
 	</properties>
 
+	<scm>
+		<url>https://github.com/rajeshgpai/mvnrelease</url>
+		<connection>scm:git:https://github.com/rajeshgpai/mvnrelease.git</connection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://localhost:8081/repository/app-release</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
